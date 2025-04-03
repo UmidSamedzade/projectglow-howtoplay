@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Glow - How to Play</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .container {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #6d28d9;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #7c3aed;
+      border-bottom: 2px solid #e9d5ff;
+      padding-bottom: 8px;
+      margin-top: 30px;
+    }
+    .language-selector {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      gap: 10px;
+    }
+    .language-btn {
+      padding: 8px 20px;
+      border: none;
+      border-radius: 20px;
+      background-color: #e9d5ff;
+      color: #4c1d95;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .language-btn:hover {
+      background-color: #ddd6fe;
+      transform: translateY(-2px);
+    }
+    .language-btn.active {
+      background-color: #8b5cf6;
+      color: white;
+    }
+    .content {
+      display: none;
+    }
+    .content.active {
+      display: block;
+      animation: fadeIn 0.5s;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .highlight {
+      background-color: #fdf2f8;
+      color: #db2777;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .step-number {
+      background-color: #8b5cf6;
+      color: white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+    .step-content {
+      flex-grow: 1;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Project Glow</h1>
+    
+    <div class="language-selector">
+      <button class="language-btn active" onclick="changeLanguage('en')">English</button>
+      <button class="language-btn" onclick="changeLanguage('tr')">Türkçe</button>
+      <button class="language-btn" onclick="changeLanguage('az')">Azərbaycanca</button>
+    </div>
+    
+    <!-- English Content -->
+    <div id="content-en" class="content active">
+      <h2>How to Play</h2>
+      
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <strong>Game Basics:</strong> Project Glow is a fast-paced game designed to improve your reaction time and hand-eye coordination. The game features a 4x4 grid where buttons light up randomly.
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <strong>Gameplay:</strong> Tap the illuminated buttons as quickly as possible. Once tapped, another button will light up, keeping you alert with rapid transitions. Timing and precision are crucial!
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <strong>Golden Buttons:</strong> Occasionally, golden buttons will appear. Tapping these buttons gives you gold that can be used to unlock special abilities.
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <strong>Special Abilities:</strong> Use your collected gold to activate special abilities that can:
+          <ul>
+            <li>Slow down the buttons</li>
+            <li>Increase your score multiplier</li>
+            <li>Add exciting challenges to the game</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <strong>Global Leaderboard:</strong> Your performance is tracked on a global leaderboard, allowing you to compete with players worldwide.
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">6</div>
+        <div class="step-content">
+          <strong>Increasing Difficulty:</strong> As you progress, the difficulty increases, forcing you to sharpen your reflexes and improve your reaction speed.
+        </div>
+      </div>
+      
+      <h2>Tips for Success</h2>
+      <ul>
+        <li>Focus on the entire grid rather than a single point</li>
+        <li>Prioritize golden buttons when they appear</li>
+        <li>Use special abilities strategically, especially during challenging levels</li>
+        <li>Practice regularly to improve your reaction time</li>
+        <li>Short, frequent play sessions are more effective than long marathons</li>
+      </ul>
+      
+      <p>Project Glow is not just a game—it's a fun and engaging way to train your reflexes. Are you ready to take on the challenge and reach the top of the leaderboard?</p>
+    </div>
+    
+    <!-- Turkish Content -->
+    <div id="content-tr" class="content">
+      <h2>Nasıl Oynanır</h2>
+      
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <strong>Oyun Temelleri:</strong> Project Glow, reaksiyon sürenizi ve el-göz koordinasyonunuzu geliştirmek için tasarlanmış hızlı tempolu bir oyundur. Oyun, düğmelerin rastgele yandığı 4x4'lük bir ızgara sunar.
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <strong>Oynanış:</strong> Yanan düğmelere mümkün olduğunca hızlı dokunun. Bir düğmeye dokunduğunuzda, başka bir düğme yanar ve hızlı geçişlerle sizi tetikte tutar. Zamanlama ve hassasiyet çok önemlidir!
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <strong>Altın Düğmeler:</strong> Zaman zaman altın düğmeler belirecektir. Bu düğmelere dokunmak, özel yeteneklerin kilidini açmak için kullanabileceğiniz altın kazandırır.
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <strong>Özel Yetenekler:</strong> Topladığınız altınları aşağıdaki özel yetenekleri etkinleştirmek için kullanın:
+          <ul>
+            <li>Düğmeleri yavaşlatmak</li>
+            <li>Puan çarpanınızı artırmak</li>
+            <li>Oyuna heyecan verici zorluklar eklemek</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <strong>Küresel Liderlik Tablosu:</strong> Performansınız küresel bir liderlik tablosunda izlenir ve dünya çapındaki oyuncularla rekabet etmenize olanak tanır.
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">6</div>
+        <div class="step-content">
+          <strong>Artan Zorluk:</strong> İlerledikçe zorluk artar, sizi reflekslerinizi keskinleştirmeye ve reaksiyon hızınızı geliştirmeye zorlar.
+        </div>
+      </div>
+      
+      <h2>Başarı İçin İpuçları</h2>
+      <ul>
+        <li>Tek bir noktaya odaklanmak yerine tüm ızgaraya odaklanın</li>
+        <li>Altın düğmeler göründüğünde onlara öncelik verin</li>
+        <li>Özel yetenekleri stratejik olarak, özellikle zorlu seviyelerde kullanın</li>
+        <li>Reaksiyon sürenizi geliştirmek için düzenli olarak pratik yapın</li>
+        <li>Kısa ve sık oyun oturumları, uzun maratonlardan daha etkilidir</li>
+      </ul>
+      
+      <p>Project Glow sadece bir oyun değil, reflekslerinizi eğitmenin eğlenceli ve ilgi çekici bir yoludur. Meydan okumaya ve liderlik tablosunun zirvesine ulaşmaya hazır mısınız?</p>
+    </div>
+    
+    <!-- Azerbaijani Content -->
+    <div id="content-az" class="content">
+      <h2>Necə Oynanılır</h2>
+      
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <strong>Oyun Əsasları:</strong> Project Glow, reaksiya vaxtınızı və əl-göz koordinasiyanızı yaxşılaşdırmaq üçün hazırlanmış sürətli templi bir oyundur. Oyun düymələrin təsadüfi şəkildə işıqlandığı 4x4 şəbəkə təqdim edir.
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <strong>Oyun Gedişatı:</strong> İşıqlanan düymələrə mümkün qədər tez toxunun. Toxunduqdan sonra başqa bir düymə işıqlanacaq və sürətli keçidlərlə sizi ayıq saxlayacaq. Vaxt və dəqiqlik çox vacibdir!
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <strong>Qızıl Düymələr:</strong> Bəzən qızıl düymələr görünəcək. Bu düymələrə toxunmaq sizə xüsusi bacarıqların kilidini açmaq üçün istifadə edə biləcəyiniz qızıl qazandırır.
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <strong>Xüsusi Bacarıqlar:</strong> Topladığınız qızılı bu xüsusi bacarıqları aktivləşdirmək üçün istifadə edin:
+          <ul>
+            <li>Düymələri yavaşlatmaq</li>
+            <li>Xal çarpanınızı artırmaq</li>
+            <li>Oyuna həyəcan verici çətinliklər əlavə etmək</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <strong>Qlobal Liderlik Cədvəli:</strong> Performansınız qlobal liderlik cədvəlində izlənilir və dünya miqyasında oyunçularla rəqabət aparmağınıza imkan verir.
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">6</div>
+        <div class="step-content">
+          <strong>Artan Çətinlik:</strong> İrəlilədikcə çətinlik artır və sizi reflekslərinizi daha da kəskinləşdirməyə və reaksiya sürətinizi yaxşılaşdırmağa məcbur edir.
+        </div>
+      </div>
+      
+      <h2>Uğur Üçün Məsləhətlər</h2>
+      <ul>
+        <li>Tək bir nöqtəyə deyil, bütün şəbəkəyə diqqət yetirin</li>
+        <li>Qızıl düymələr göründükdə onlara üstünlük verin</li>
+        <li>Xüsusi bacarıqlardan strateji şəkildə, xüsusilə çətin səviyyələrdə istifadə edin</li>
+        <li>Reaksiya vaxtınızı yaxşılaşdırmaq üçün müntəzəm məşq edin</li>
+        <li>Qısa və tez-tez oyun sessiyaları uzun marafonlardan daha effektivdir</li>
+      </ul>
+      
+      <p>Project Glow sadəcə bir oyun deyil, reflekslərinizi məşq etdirməyin əyləncəli və cəlbedici yoludur. Çağırışı qəbul etməyə və liderlik cədvəlinin zirvəsinə çatmağa hazırsınızmı?</p>
+    </div>
+  </div>
+
+  <script>
+    function changeLanguage(lang) {
+      // Hide all content divs
+      document.querySelectorAll('.content').forEach(content => {
+        content.classList.remove('active');
+      });
+      
+      // Show selected language content
+      document.getElementById('content-' + lang).classList.add('active');
+      
+      // Update button active states
+      document.querySelectorAll('.language-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      document.querySelector(`.language-btn[onclick="changeLanguage('${lang}')"]`).classList.add('active');
+    }
+  </script>
+</body>
+</html>
